@@ -1,0 +1,180 @@
+/* Variáveis para padronizar cores */
+:root {
+  --primary-color: #0056b3; /* Azul mais escuro para botões e detalhes */
+  --secondary-color: #e2e6ea; /* Cinza claro para fundos sutis */
+  --text-color: #333; /* Texto principal */
+  --light-text-color: #666; /* Texto secundário */
+  --border-color: #ddd; /* Bordas de elementos */
+  --success-color: #28a745; /* Cor para sucesso (opcional, pode ser usada em alertas) */
+  --danger-color: #dc3545; /* Cor para ações de perigo/excluir */
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Fonte moderna e limpa */
+  margin: 0;
+  padding: 40px 20px; /* Mais padding para maior respiro nas laterais */
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6; /* Melhor legibilidade */
+}
+
+/* Container principal para centralizar e dar largura máxima */
+.container {
+  max-width: 1000px; /* Largura máxima para conteúdo */
+  margin: 0 auto; /* Centraliza na tela */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px; /* Cantos levemente arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra sutil para profundidade */
+}
+
+h1, h2 {
+  color: var(--primary-color); /* Títulos com a cor primária */
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600; /* Um pouco mais encorpado */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os inputs quebrem linha */
+  gap: 15px; /* Espaçamento entre os campos */
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  justify-content: center; /* Centraliza itens no formulário */
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1; /* Faz os inputs ocuparem o espaço disponível */
+  min-width: 180px; /* Largura mínima para inputs em telas menores */
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1); /* Efeito de foco sutil */
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+button[type="submit"]:hover {
+  background-color: #004494; /* Tom mais escuro no hover */
+  transform: translateY(-2px); /* Efeito de elevação sutil */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px; /* Arredonda as bordas da tabela */
+  overflow: hidden; /* Garante que as bordas arredondadas funcionem com o colapso */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra mais leve para a tabela */
+  margin-top: 30px;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 15px; /* Mais padding para maior respiro */
+  text-align: left; /* Alinha texto à esquerda para melhor leitura */
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase; /* Deixa os títulos em maiúsculas */
+  letter-spacing: 0.5px; /* Espaçamento entre letras para títulos */
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8; /* Listras zebradas sutis para legibilidade */
+}
+
+tr:hover {
+  background-color: #f0f0f0; /* Efeito de hover na linha */
+}
+
+.acao-btn {
+  padding: 8px 15px; /* Ajusta padding para botões de ação */
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Cantos mais arredondados */
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-excluir {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-excluir:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+.btn-editar {
+  background-color: #007bff; /* Azul padrão */
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  form {
+    flex-direction: column; /* Inputs em coluna em telas pequenas */
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    min-width: unset;
+  }
+
+  table, th, td {
+    font-size: 0.85rem; /* Fonte menor em tabelas para telas pequenas */
+    padding: 10px;
+  }
+
+  /* Esconde colunas menos importantes em telas pequenas para não quebrar o layout */
+  table td:nth-child(4), /* Tamanho */
+  table th:nth-child(4) {
+    display: none;
+  }
+}
