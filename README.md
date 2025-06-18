@@ -4,9 +4,9 @@ Aqui está um rascunho completo para o seu arquivo README.md:
 
 Markdown
 
-# Sistema de Cadastro de Produtos - Loja de Roupas
+# Sistema de Cadastro de Produtos 
 
-Este projeto apresenta um **Sistema Web de Cadastro e Gestão de Produtos para Loja de Roupas**, desenvolvido com uma abordagem full-stack. A aplicação permite realizar operações de CRUD (Criar, Ler, Atualizar, Deletar) em produtos, oferecendo uma solução simples e funcional para o gerenciamento de estoque básico.
+Este projeto apresenta um **Sistema Web de Cadastro e Gestão de Produtos**, desenvolvido com uma abordagem full-stack. A aplicação permite realizar operações de CRUD (Criar, Ler, Atualizar, Deletar) em produtos, oferecendo uma solução simples e funcional para o gerenciamento de estoque básico.
 
 ## ✨ Funcionalidades
 
@@ -100,4 +100,4 @@ Este projeto está licenciado sob a licença MIT.
 
 Autor:
 
-Geison Sousa de Oliveira
+**Geison Sousa de Oliveira**
