@@ -1,9 +1,3 @@
-Com certeza! Um bom README.md é essencial para qualquer projeto no GitHub. Ele serve como um guia rápido para quem visita seu repositório.
-
-Aqui está um rascunho completo para o seu arquivo README.md:
-
-Markdown
-
 # Sistema de Cadastro de Produtos 
 
 Este projeto apresenta um **Sistema Web de Cadastro e Gestão de Produtos**, desenvolvido com uma abordagem full-stack. A aplicação permite realizar operações de CRUD (Criar, Ler, Atualizar, Deletar) em produtos, oferecendo uma solução simples e funcional para o gerenciamento de estoque básico.
