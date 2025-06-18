@@ -29,18 +29,15 @@ Este projeto apresenta um **Sistema Web de Cadastro e Gestão de Produtos para L
 
 ## 📁 Estrutura do Projeto
 
-loja-de-roupas/
+cadastroDeProdutos/
 │
 ├── index.html        # Frontend - Estrutura principal do site (movido da pasta public/)
 ├── styles.css        # Frontend - Estilos CSS (movido da pasta public/)
 ├── script.js         # Frontend - Lógica JavaScript (movido da pasta public/)
-│
-├── backend/
-│   ├── server.js     # Backend - Servidor Node.js com Express
-│   └── db.js         # Backend - Conexão e configuração do banco de dados SQLite
-│
+├── server.js     # Backend - Servidor Node.js com Express
+└── db.js         # Backend - Conexão e configuração do banco de dados SQLite
 ├── database/
-│   └── loja.db       # Banco de dados SQLite (gerado automaticamente)
+│── loja.db       # Banco de dados SQLite (gerado automaticamente)
 │
 ├── package.json      # Dependências do projeto Node.js
 └── README.md         # Este arquivo
