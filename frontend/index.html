@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Roupas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Produtos</h1>
+
+    <form id="produto-form">
+      <input type="text" id="nome" placeholder="Nome do produto" required>
+      <input type="text" id="categoria" placeholder="Categoria" required>
+      <input type="number" id="preco" placeholder="Preço" required step="0.01">
+      <input type="text" id="tamanho" placeholder="Tamanho (ex: P, M, G)" required>
+      <input type="number" id="quantidade" placeholder="Quantidade" required>
+      <input type="hidden" id="produto-id"> <button type="submit">Cadastrar Produto</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <table id="tabela-produtos">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Categoria</th>
+          <th>Preço</th>
+          <th>Tamanho</th>
+          <th>Quantidade</th>
+          <th>Açoes</th>
+        </tr>
+      </thead>
+      <tbody>
+        </tbody>
+    </table>
+  </div> <script src="script.js"></script>
+</body>
+</html>
